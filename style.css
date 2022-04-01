@@ -4,6 +4,7 @@ body{
     padding: 0;
     font-family: Roboto, Arial, sans-serif;
     overflow-y: scroll;
+    
 }
 
 svg{
@@ -15,6 +16,12 @@ svg{
     display: flex;
     justify-content: space-between;
     height: 56px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    background-color: white;
+
 }
 
 .navigation button{
@@ -23,6 +30,7 @@ svg{
     background-color: transparent;
     cursor: pointer;
     line-height: 5px;
+    /* position: fixed; */
 }
 
 
@@ -112,6 +120,13 @@ svg{
     border-top: 1px solid rgba(0, 0, 0, 0.1);
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
     margin-left: 240px;
+    position: fixed;
+    top: 56px;
+    right: 0;
+    left: 0;
+    background-color: white;
+    
+    
 }
 
 .chips__item{
@@ -123,8 +138,8 @@ svg{
     border-radius: 16px;
     background-color:rgba(0, 0, 0, 0.05);
     font-weight: 500;
-    
     cursor: pointer;
+ 
 }
 
 .chips__item:first-child{
@@ -146,6 +161,7 @@ svg{
     bottom: 0;
     height: calc(100vh-56px);
     overflow-y: scroll;
+    position: fixed;
 }
 
 .sidebar img{
@@ -211,4 +227,57 @@ svg{
     font-weight: 500;
     color: #606060;
     text-decoration: none;
+}
+
+/* feed  */
+
+.feed{
+    margin-top: 128px;
+    margin-left: 240px;
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content:space-around; */
+    justify-content: center;
+    /* overflow-y: scroll; */
+}
+
+.feed__item{
+    margin: 0 8px 40px 8px;
+}
+
+
+.feed__item__thumbnil{
+    width: 269px;
+    height: 150px;
+    background-color: gray;
+}
+
+.feed__item__info{
+    display: flex;
+    font-size: 14px;
+    color: rgb(96, 96, 96);
+}
+
+.feed__item__info h3{
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 4px;
+    color: rgb(3, 3, 3);
+}
+
+.feed__item__info a{
+    text-decoration: none;
+    color: unset;
+}
+
+.feed__item__info p{
+    margin: 0px;
+}
+
+.feed__item__info__avatar{
+    height: 36px;
+    width: 36px;
+    border-radius: 50%;
+    background-color: gray;
+    margin: 12px 12px 0 0;
 }
